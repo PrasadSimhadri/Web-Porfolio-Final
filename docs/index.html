@@ -493,6 +493,65 @@
             background-color: var(--bg-secondary);
         }
 
+        /* Achievements Section */
+        #achievements {
+            background-color: var(--bg-primary);
+        }
+
+        .achievements-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .achievement-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 28px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 5px 15px var(--shadow-color);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px var(--shadow-color);
+            border-color: var(--accent-color);
+        }
+
+        .achievement-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            background-color: var(--accent-transparent);
+            border: 1px solid var(--border-color);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .achievement-title {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .achievement-meta {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .achievement-description {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -705,7 +764,7 @@
 
         /* Contact Section */
         #contact {
-            background-color: var(--bg-primary);
+            background-color: var(--bg-secondary);
         }
 
         .contact-container {
@@ -983,6 +1042,7 @@
                     <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <button class="theme-toggle" id="themeToggle">
@@ -1145,6 +1205,31 @@
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-image">
+                        <img src="images/sprint4_foodApp.png" alt="FoodApp Project">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">FoodApp</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">NextJS</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <p class="project-description">
+                            Full-stack food ordering application featuring JWT
+                            authentication, time slot booking, order management, admin dashboard and automated email
+                            notifications.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/PrasadSimhadri/sprint4_repo" target="_blank"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="https://sprint4-repo.vercel.app/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
                         <img src="images/scm1.png" alt="Smart City Management Project">
                     </div>
                     <div class="project-info">
@@ -1190,31 +1275,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/sprint4_foodApp.png" alt="FoodApp Project">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">FoodApp</h3>
-                        <div class="project-tech">
-                            <span class="tech-tag">NextJS</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
-                        </div>
-                        <p class="project-description">
-                            Full-stack food ordering application featuring JWT
-                            authentication, time slot booking, order management, admin dashboard and automated email
-                            notifications.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/PrasadSimhadri/sprint4_repo" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub</a>
-                            <a href="https://sprint4-repo.vercel.app/" target="_blank"><i
-                                    class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1251,8 +1311,8 @@
                                 <div class="skill-name">JavaScript</div>
                             </div>
                         </div>
-                        
-                        
+
+
                     </div>
                 </div>
                 <!-- hello -->
@@ -1344,6 +1404,28 @@
                                 <div class="skill-name">Figma</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h3 class="achievement-title">SprintFour Innovation Hackathon - 2nd Prize</h3>
+                        <p class="achievement-meta">SprintFour</p>
+                        <p class="achievement-description">
+                            Secured 2nd prize in the SprintFour Innovation Hackathon, where I designed and presented
+                            FoodApp.
+                        </p>
                     </div>
                 </div>
             </div>
